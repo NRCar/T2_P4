@@ -11,7 +11,7 @@ The main components of the algorithm are as follows:
   If the coefficient is too low, the car may react too slowly to curves when the car gets off-center with a higher CTE. Too High Kp results in wobbling of the car.
  
 * The "I" for integral sums up all CTEs up to that point, to help correct errors such as unaligned steering and is controlled by Ki. 
-If the coefficient is too high the car tends to have quicker oscillations. A low coefficent for I will cause the car to tend to drift to one side of the lane or the other for longer periods of time.
+If the coefficient is too high the car tends to have quicker oscillations. A low coefficent will cause the car to tend to drift to one side of the lane or the other for longer periods of time.
 * The "D" for derivate is the change in CTE from one value to the next and is controlled by Kd. 
 and is necessary to help smooth the steering.
 
