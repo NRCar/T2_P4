@@ -7,18 +7,18 @@ I used different instances of the PID controller to control the steer angle as w
 
 #### Components of PID
 The main components of the algorithm are as follows:
-* The "P" for proportional means that the car will steer in proportion to the cross-track error, or CTE. and is controlled by the coefficient Kp
-  If the coefficient is too low, the car may react too slowly to curves when the car gets off-center with a higher CTE. Too High Kp results in wobbling of the car.
+* The "P" component is  proportional to the CTE. and is controlled by the coefficient Kp.
+If the coefficient is too low, the car may react too slowly to curves when the car gets off-center with a higher CTE. Too High Kp results in wobbling of the car.
  
-* The "I" for integral sums up all CTEs up to that point, to help correct errors such as unaligned steering and is controlled by Ki. 
+* The "I" component is  proportional to the integral or sums up all CTEs up to that point, to help correct errors such as unaligned steering and is controlled by Ki. 
 If the coefficient is too high the car tends to have quicker oscillations. A low coefficent will cause the car to tend to drift to one side of the lane or the other for longer periods of time.
-* The "D" for derivate is the change in CTE from one value to the next and is controlled by Kd. 
+* The "D" component is  proportional to the derivate or the change in CTE from one value to the next and is controlled by Kd. 
 and is necessary to help smooth the steering.
 
-These behaved fairly in line with what I was expecting.
+These behaved like expected when tuned.
 
 #### Finding the right coefficients
-IThe final values were determined by manual tuning. 
+The final values were determined by manual tuning. 
 The ratio of the coefficients to each other that I chose (Kp=0.1, Kd=3.0, Ki=0.002) seemed to work well when driving at speed of 20.
 The same coefficients worked for both steering and throttle.
 
