@@ -1,7 +1,7 @@
 # CarND-Controls-PID
 
 ## Introduction
-In this C++ project, I use a PID controller to drive a simulated car around a virtual track.
+For this project I use a PID controller to drive a simulated car around a virtual track in the term 2 simulator.
 I used different instances of the PID controller to control the steer angle as well as the throttle of the car.
 
 
